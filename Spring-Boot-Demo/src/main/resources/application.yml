@@ -1,0 +1,7 @@
+server:
+  port: 8881
+  context-path: /spring-boot
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/sg

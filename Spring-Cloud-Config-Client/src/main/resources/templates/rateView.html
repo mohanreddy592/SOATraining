@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="UTF-8"></meta>
+<title>Rate View Rendered using Thymleaf is a Template Engine</title>
+</head>
+<body>
+
+	<h1>Rate for Toll Booth</h1>
+	<p th:text="'Rate For Toll Booth: '+${laneCount}+ '  price: '+${rate}+' tollStart: '+${tollStart}"></p>
+
+</body>
+</html>
