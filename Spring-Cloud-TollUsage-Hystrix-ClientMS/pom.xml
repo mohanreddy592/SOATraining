@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.spring.cloud</groupId>
-	<artifactId>Spring-Cloud-TollUsage-Feign-ClientMS</artifactId>
+	<artifactId>Spring-Cloud-TollUsage-Hystrix-ClientMS</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
