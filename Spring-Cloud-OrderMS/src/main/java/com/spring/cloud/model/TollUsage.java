@@ -3,6 +3,10 @@ package com.spring.cloud.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import io.swagger.annotations.ApiModelProperty;
+
 @Document(collection="toll")
 public class TollUsage {
 
@@ -35,6 +39,8 @@ public class TollUsage {
 		this.id = id;
 	}
 
+	@JsonProperty(required=true)
+	@ApiModelProperty(notes="Name of the station id", required=true)
 	public String getStationId() {
 		return stationId;
 	}
@@ -51,6 +57,8 @@ public class TollUsage {
 		this.licensePlate = licensePlate;
 	}
 
+	@JsonProperty(required=true)
+	@ApiModelProperty(notes="Vehicle entry time Hours:Minutes format", required=true)
 	public String getTimeStamp() {
 		return timeStamp;
 	}
